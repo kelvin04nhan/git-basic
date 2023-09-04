@@ -1,0 +1,10 @@
+h1 {
+    color: rgb(142, 68, 173);
+    font-size: 35px;
+    font-style: semi-bold;
+    font-family: "Verdama";
+
+    text-align: center;
+
+    text-transform: none;
+}
