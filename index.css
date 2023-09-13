@@ -1,10 +1,27 @@
 h1 {
-    color: rgb(142, 68, 173);
-    font-size: 35px;
-    font-style: semi-bold;
-    font-family: "Verdama";
+  color: rgb(142, 68, 173);
+  font-size: 35px;
+  font-style: semi-bold;
+  font-family: "Verdama";
 
-    text-align: center;
+  text-align: center;
 
-    text-transform: none;
+  text-transform: none;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F5F5;
+}
+.content {
+    /* background-color: cadetblue; */
+    background-repeat: no-repeat;
+    margin: 20px;
+    overflow: auto;
+    float: right;
+}
+img {
+  float: left;
+  margin: 10px;
+  border-radius: 50px;
 }
