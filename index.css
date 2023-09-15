@@ -1,27 +1,41 @@
-h1 {
-  color: rgb(142, 68, 173);
-  font-size: 35px;
-  font-style: semi-bold;
-  font-family: "Verdama";
-
-  text-align: center;
-
-  text-transform: none;
+html {
+  background-color: #fff;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif; 
+  /* background-color: #F5F5F5; */
+  
 }
-
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #F5F5F5;
+.header {
+  background-color: firebrick;
+  display:flex;
+  background-size: inline-block;
+  justify-content: center; /* Căn giữa ngang */
+  align-items: center; /* Căn giữa dọc */
 }
 .content {
-    /* background-color: cadetblue; */
-    background-repeat: no-repeat;
-    margin: 20px;
-    overflow: auto;
-    float: right;
+  background-color: burlywood;
+  
+  /* background-color: cadetblue; */
+  background-repeat: no-repeat;
+  margin: 20px;
+  overflow: auto;
+  float: right;
+  margin-top: 100px;
 }
-img {
-  float: left;
-  margin: 10px;
-  border-radius: 50px;
+.footer {
+  background-color: burlywood;
+  background-size: cover;
 }
+/* .header h1 {
+  color: rgb(142, 68, 173);
+  font-size: 35px;
+  /* font-style: semi-bold;
+  font-family: "Verdama"; */
+
+  /* text-align: center;
+
+  text-transform: none;
+  justify-content: center;
+  align-items: center;
+  
+}  */
