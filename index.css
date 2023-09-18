@@ -1,56 +1,26 @@
-html {
-  background-color: #fff;
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif; 
-  /* background-color: #F5F5F5; */
-  
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+#main{
+  background-color: blanchedalmond;
 }
-.header {
-  background-color: firebrick;
-  display:flex;
-  background-size: inline-block;
-  justify-content: center; /* Căn giữa ngang */
-  align-items: center; /* Căn giữa dọc */
 }
-.content {
-  background-color: burlywood;
-  
-  /* background-color: cadetblue; */
-  background-repeat: no-repeat;
-  margin: 20px;
-  overflow: auto;
-  float: right;
-  margin-top: 100px;
-}
-.footer {
-  background-color: burlywood;
-  background-size: cover;
- 
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-
-
-}
-/* .header h1 {
-  color: rgb(142, 68, 173);
-  font-size: 35px;
-  /* font-style: semi-bold;
-  font-family: "Verdama"; */
-
-  /* text-align: center;
-
-  text-transform: none;
-  justify-content: center;
+#header {
+  display: flex;
   align-items: center;
-  
-}  */
-a {
-  margin-top: 100px;
-  display: flex;
-  align-items: end;
+  justify-content: center;
+  font-display: arial;
+  background-color: firebrick;
 }
-div, p {
+#photo {
+  border-radius: 100px;
   display: flex;
-  align-items: unsafe;
+  align-items: flex-start;
+  justify-content: right;
 }
+#footer{
+  display:flex;
+  background-color: grey;
+  align-items: center;
+justify-content: center;}
