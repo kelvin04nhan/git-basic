@@ -45,3 +45,14 @@ p {
 ol {
   margin: 10px;
 }
+.skill {
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  
+}
+
+.experience {
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
