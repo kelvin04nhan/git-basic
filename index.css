@@ -68,3 +68,10 @@ ol {
   position: relative;
   top: 50px;
 }
+#footer ol {
+  /* display:flex; */
+  position: relative;
+  left: 50px;
+
+
+}
