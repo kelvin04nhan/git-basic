@@ -10,8 +10,6 @@ html {
 
 
 
-
-Thêm vào tệp style.css
 html, body {
   height: 100%;
   margin: 0;
@@ -77,13 +75,14 @@ p {
 /* Footer styles */
 .footer {
   width: 100%; 
-  background-color: rgb(214, 212, 212);
+  background-color: rgba(223, 208, 208, 0.466);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px; 
   position: relative;
   top: 50px;
+  margin-top: 50px;
 }
 
 /* Footer ordered list styles */
