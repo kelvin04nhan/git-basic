@@ -114,3 +114,10 @@ p {
       width: 100%; 
   }
 }
+#contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 200px;
+
+}
