@@ -1,77 +1,121 @@
+/* Reset default styles and set box-sizing */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-#main{
+}
+html {
+  background-color: bisque;
+}
+/* Apply styles to the main container */
+
+
+
+Thêm vào tệp style.css
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ngăn trượt thanh cuộn xuống xuất hiện nếu nội dung không đủ dài */
+}
+
+main {
   background-color: blanchedalmond;
 }
-}
-#header {
+
+/* Header styles */
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-display: arial;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: firebrick;
+  /* color: white; Set text color for better readability */
+  padding: 20px; /* Add padding for spacing */
+ 
 }
-#content {
-  position: relative;
-  top: 50px;
+
+/* Content container styles */
+.preferences {
+  padding: 20px; /* Add padding for spacing */
 }
-.intro{
-  margin-top: 100px;
+
+/* Intro section styles */
+.intro {
+  margin-top: 20px; /* Reduce margin-top for better positioning */
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
-  font: optional;
-  column-gap: 10px;
-  /* display: flex; */
-  /* align-items: flex-start; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  
 }
+
+/* Paragraph styles */
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #333;
+  margin: 10px 0; /* Add margin for spacing */
 }
-#photo {
-  width: auto;
-  height: max-content;
-  border-radius: 100px;
+
+
+/* Thêm vào tệp style.css */
+/* Hình ảnh tròn và căn bên phải */
+.photo-container {
+  position: absolute;
+  top: 100px; /* Điều chỉnh khoảng cách từ đầu trang */
+  right: 20px; /* Điều chỉnh khoảng cách từ phía bên phải */
+}
+
+.photo {
+  width: 150px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+  height: 150px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+  border-radius: 100%; /* Biến hình ảnh thành hình tròn */
   display: flex;
-  align-items: flex-start;
-  justify-content: right;
-  /* justify-items: first baseline; */
-  /* margin-bottom: 500px; */
-  position: relative;
-  bottom: 280px;
+  justify-content: flex-end; /* Align the photo to the right */
+  margin-bottom: 50px; /* Reduce margin-bottom for better spacing */
 }
-#footer{
-  width: auto;
-  display:flex;
+
+
+/* Footer styles */
+.footer {
+  width: 100%; /* Set to full width */
   background-color: rgb(214, 212, 212);
+  display: flex;
   align-items: center;
-  justify-content: center;}
-
-ol {
-  margin: 10px;
-}
-.skill {
-  margin-top: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  
-}
-
-.experience {
-  margin-top: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.contact {
+  justify-content: center;
+  padding: 20px; /* Add padding for spacing */
   position: relative;
   top: 50px;
 }
-#footer ol {
-  /* display:flex; */
+
+/* Footer ordered list styles */
+.footer ol {
   position: relative;
   left: 50px;
+  list-style-type: decimal; /* Use decimal numbering */
+}
 
+/* Skill and Experience section styles */
+.skill,
+.experience {
+  margin-top: 20px; /* Reduce margin-top for better positioning */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  main {
+      flex-direction: column; 
+      align-items: center;
+  }
 
+  section {
+      flex-basis: 100%; 
+  }
+
+  aside {
+      width: 100%; 
+  }
 }
