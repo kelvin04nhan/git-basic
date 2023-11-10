@@ -6,20 +6,20 @@
     <title>Introduce Myself</title>
     <link rel="stylesheet" href="index.css">
     <script>
-        // Hiển thị thông báo khi nhấp vào ảnh đại diện
-        function showMessage() {
-            var messageElement = document.getElementById("message");
-            messageElement.innerText = "Bạn đã nhấp vào ảnh đại diện";
-        }
+        // // Hiển thị thông báo khi nhấp vào ảnh đại diện
+        // function showMessage() {
+        //     var messageElement = document.getElementById("message");
+        //     messageElement.innerText = "Bạn đã nhấp vào ảnh đại diện";
+        // }
 
-        // Xử lý sự kiện khi form được submit
-        document.getElementById("contactForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Ngăn chặn chuyển trang khi submit
-            var email = document.getElementById("email").value;
-            var phone = document.getElementById("phone").value;
-            var messageElement = document.getElementById("message");
-            messageElement.innerText = "Email: " + email + "\nSố điện thoại: " + phone;
-        });
+        // // Xử lý sự kiện khi form được submit
+        // document.getElementById("contactForm").addEventListener("submit", function (event) {
+        //     event.preventDefault(); // Ngăn chặn chuyển trang khi submit
+        //     var email = document.getElementById("email").value;
+        //     var phone = document.getElementById("phone").value;
+        //     var messageElement = document.getElementById("message");
+        //     messageElement.innerText = "Email: " + email + "\nSố điện thoại: " + phone;
+        // });
     </script>
 </head>
 
@@ -57,7 +57,7 @@
         </section>
     
     <aside class="photo-container">
-        <img src="./image_6487327__1_-removebg-preview (1).png" alt="My profile picture" title="My photo" class="photo" onclick="showMessage()">
+        <img src="./image_6487327__1_-removebg-preview (1).png" alt="My profile picture" title="My photo" class="photo" onclick= "alert('Bạn đã nhấn vào ảnh đại diện')">
     </aside>
     
     <footer class="footer">
@@ -70,8 +70,7 @@
                 <li>Ride a motorbike</li>
             </ol>
         </section>
-            <!-- Ảnh đại diện -->
-    <!-- <img src="avatar.jpg" alt="Ảnh đại diện" id="avatar" onclick="showMessage()"> -->
+         
 
     <!-- Form liên hệ -->
     <section id="contactForm">
@@ -83,17 +82,13 @@
             <label for="phone">Số điện thoại:</label>
             <input type="tel" id="phone" name="phone" required><br>
     
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onclick="alert('Bạn đã nhập thông tin')">
         </form>
     
         
     </section>
     
-    <section>
-        <!-- Kết quả thông báo -->
-        <div id="message"></div>
-        <!-- <p><strong>"Bạn đã nhấp vào ảnh đại diện"</strong></p> -->
-    </section>
+
     </footer>
 </main>
 </body>
