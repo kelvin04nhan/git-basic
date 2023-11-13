@@ -121,3 +121,30 @@ p {
   margin-left: 200px;
 
 }
+/* Default styles for larger screens */
+body {
+  font-size: 16px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust other styles for smaller screens here */
+  .header h1 {
+      font-size: 1.5em; /* Adjust header font size for smaller screens */
+  }
+
+  .intro,
+  .skill,
+  .experience,
+  .contact,
+  .photo-container,
+  .footer {
+      width: 100%; /* Make sections take up full width on smaller screens */
+  }
+
+  /* Adjust other styles for smaller screens here */
+}
