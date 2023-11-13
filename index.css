@@ -148,3 +148,11 @@ body {
 
   /* Adjust other styles for smaller screens here */
 }
+.intro,
+.skill,
+.experience,
+.contact,
+.photo-container,
+.footer {
+    overflow: auto; /* or overflow: scroll; */
+}
