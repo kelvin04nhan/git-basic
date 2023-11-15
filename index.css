@@ -182,6 +182,7 @@ body {
 
   .footer ol {
     left: 0; /* Adjusted left margin for better appearance */
+    max-width: max-content;
   }
 }
 
