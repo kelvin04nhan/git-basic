@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 html {
   background-color: bisque;
@@ -125,16 +126,36 @@ p {
 body {
   font-size: 16px;
 }
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-container {
+    margin-bottom: 10px;
+  }
+  
+  #contactForm {
+    margin-left: 0;
+  }
+}
+
+/* Default styles for larger screens */
+body {
+  font-size: 16px;
+}
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
   body {
-      font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 14px;
   }
 
   /* Adjust other styles for smaller screens here */
   .header h1 {
-      font-size: 1.5em; /* Adjust header font size for smaller screens */
+    font-size: 1.5em;
   }
 
   .intro,
@@ -143,16 +164,15 @@ body {
   .contact,
   .photo-container,
   .footer {
-      width: 100%; /* Make sections take up full width on smaller screens */
+    width: 100%;
   }
-
-  /* Adjust other styles for smaller screens here */
 }
+
 .intro,
 .skill,
 .experience,
 .contact,
 .photo-container,
 .footer {
-    overflow: auto; /* or overflow: scroll; */
+  overflow: auto;
 }
